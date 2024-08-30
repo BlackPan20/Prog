@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Lernen</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<style>
+
+    *{
+        background-color: white;
+        color: black;
+    }
+    body {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            margin: 0;
+        }
+    nav{
+        background-color: white;
+            color: black;
+           
+            display: flex;
+            justify-content: center; 
+            gap: 10px; /* Abstand zwischen den Buttons */
+           
+    }
+    button{
+        border-radius: 10px;
+    }
+    button:hover{
+        color: blue;
+        font-size: x-large;
+    }
+</style>
+<body>
+    <div class="nav">
+        <button onclick="datasArray()">Fülle mit ...</button>
+        <button onclick="createCanva()">ZickZack</button>
+        <button onclick="randomNum()">Zufallszaheln</button>
+        <button onclick="aadition()">Addieren</button>
+        <button onclick="summFromTo()">Summe von bis</button>
+        <button onclick="switchNum()">Inhalt tauschen</button>
+        <button onclick="clearArray()">Clear</button>
+        <button onclick="clearLastEntry()">Letzte Zahl löschen</button>
+        <button onclick="clearFirstNum()">Vorderste Zahl löschen</button>
+        <button onclick="randomFact()">Random Fact</button>
+        <button onclick="postPap()">Brief schreiben</button>
+        <button onclick="timer()">Timer</button>
+        <button onclick="msToSek()">Sek zu ms Umrechner</button>
+        <button onclick="tellName()">Wie heißt du?</button>
+        <button onclick="addWordToArray()">Wort zum Array adden</button>
+        <button onclick="switchToDatastructure()">Datenstruckturen</button>
+
+    </div>
+   
+    <p id="liste"></p>
+    <div class="item"></div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+</body>
+<script src="script.js">
+
+
+
+</script>
+</html>

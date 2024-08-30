@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenstrucktur</title>
+</head>
+<style>
+
+    *{
+        background-color: white;
+        color: black;
+    }
+    body {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            margin: 0;
+        }
+    nav{
+        background-color: white;
+            color: black;
+           
+            display: flex;
+            justify-content: center; 
+            gap: 10px; /* Abstand zwischen den Buttons */
+           
+    }
+    button{
+        border-radius: 10px;
+    }
+    button:hover{
+        color: blue;
+        font-size: x-large;
+    }
+</style>
+<body>
+    <div class="nav">
+        <button onclick="addArray()">Array erstellen</button>
+        <button onclick="lenghtOfArray()">Länge der Liste</button>
+        <button onclick="elePosList()">Element Pos von Liste</button>
+        <button onclick="deletePos()">Lösche Pos aus Liste</button>
+        <button onclick="clearArray()">Lösche alles aus Liste</button>
+        <button onclick="addInputToArray()">Füge Wert bei Position in Liste ein</button>
+        <button onclick="changeElemntToWert()">Ersetze Element Pos von Listennamen durch Wert</button>
+        <button onclick="addList()">Sachen zur Liste hinzufügen</button>
+        <button onclick="checkIfWertinTheArray()">Ist Wert in der Liste vorhanden</button><br>
+        <button onclick="checkTheFirstPositionOfWert()">An welcher Position ist Wert?</button>
+
+
+    </div>
+    <h3 id="namelist"></h3>
+    <p id="liste"></p>
+    
+    
+</body>
+<script src="script.js"></script>
+
+
+</html>
